@@ -34,6 +34,20 @@ a:hover {
 a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
+a:before {
+    color: rgba(var(--bright-color), var(--hundred)) !important;
+    position: absolute;
+    top: 0;
+    right: 10px !important;
+    margin-left: 240px;
+    background: linear-gradient(270deg, rgba(var(--dark-color), var(--hundred)), rgba(var(--dark-color), 0.3));
+    width: 8px;
+    margin: 10px 1px;
+    height: 8px;
+    border-radius: 50%;
+    font-size: 0;
+    transition: 0.2s ease, -webkit-0.2s ease, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s;
+}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -66,18 +80,22 @@ a {
 .topright:hover {color: red;}
 
 .link{
-    display:block;
-    text-decoration:none;
-    border-radius: 20px !important;
-    font-size: 100% !important;
-    color: #f8f8f8 !important;
-    font-weight: bold !important;
-    background: #20212B !important;
-    height: 28px !important;
-    margin: 10px 5px 0 5px !important;
-    padding: 2px 2px 2px 15px !important;
-    display: flex !important;
-    align-items: center !important;
+    border: none;
+    border-radius: 13px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(var(--block-color), 0.6);
+    transition: 0.3s ease, -webkit-0.3s ease, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s;
+    font-size: 14px;
+    color: rgba(var(--dark-color), var(--hundred));
+    height: 28px;
+    padding: 0 14px 0;
+    display: flex;
+    line-height: 1.5;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    overflow: visible;
 }
 
 @media screen and (max-width:400px) {
@@ -95,10 +113,13 @@ a {
     #inf > h3,
     #math > h3{
         display: table;
-        font-size: 13px;
+        font-size: 14px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 15px;
         margin-top: 15px;
+    }
+    a{
+        font-size: 15px;
     }
 }
