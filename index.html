@@ -1,76 +1,216 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>JoJoPigs</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Comfortaa;
+            background-color: #14151B;
+            color:#fff;
+        }
+        *{
+            color:#fff;
+            font-family: Comfortaa;
+
+        }
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #20212B;
+            background-color: #20212B;
+
+        }
+
+        /* Style the buttons inside the tab */
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #C30B15;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #C30B15;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 0px solid #ccc;
+            border-top: none;
+        }
+
+        /* Style the close button */
+        .topright {
+            float: right;
+            cursor: pointer;
+            font-size: 28px;
+        }
+
+        .topright:hover {color: red;}
+
+        .ssilka{
+            display:block;
+            text-decoration:none;
+            font-family: Comfortaa !important;
+            border-radius: 20px !important;
+            font-size: 100% !important;
+            color: #f8f8f8 !important;
+            font-weight: bold !important;
+            background: #20212B !important;
+            height: 28px !important;
+            margin: 10px 5px 0 5px !important;
+            padding: 2px 2px 2px 15px !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        }
+
+    </style>
 </head>
 <body>
-    <div class="item" id="rus">
-        <div>
-            <p>Русский язык:</p>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1134-zadanie-1.html">Задание 1</a>
-            <a href="https://rustutors.ru/egeteoriya/1136-zadanie-2.html">Задание 2</a>
-            <a href="https://rustutors.ru/egeteoriya/1135-zadanie-3.html">Задание 3</a>
-            <a href="https://rustutors.ru/egeteoriya/1137-zadanie-4.html">Задание 4</a>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1138-zadanie-5.html">Задание 5</a>
-            <a href="https://rustutors.ru/egeteoriya/1139-zadanie-6.html">Задание 6</a>
-            <a href="https://rustutors.ru/egeteoriya/1140-zadanie-7.html">Задание 7</a>
-            <a href="https://rustutors.ru/egeteoriya/1141-zadanie-8.html">Задание 8</a>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1142-zadanie-9.html">Задание 9</a>
-            <a href="https://rustutors.ru/egeteoriya/1143-zadanie-10.html">Задание 10</a>
-            <a href="https://rustutors.ru/egeteoriya/1144-zadanie-11.html">Задание 11</a>
-            <a href="https://rustutors.ru/egeteoriya/1145-zadanie-12.html">Задание 12</a>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1146-zadanie-13.html">Задание 13</a>
-            <a href="https://rustutors.ru/egeteoriya/1148-zadanie-14.html">Задание 14</a>
-            <a href="https://rustutors.ru/egeteoriya/1147-zadanie-15.html">Задание 15</a>
-            <a href="https://rustutors.ru/egeteoriya/1149-zadanie-16.html">Задание 16</a>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1150-zadanie-17.html">Задание 17</a>
-            <a href="https://rustutors.ru/egeteoriya/1152-zadanie-18.html">Задание 18</a>
-            <a href="https://rustutors.ru/egeteoriya/1151-zadanie-19.html">Задание 19</a>
-            <a href="https://rustutors.ru/egeteoriya/1153-zadanie-20.html">Задание 20</a>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1154-zadanie-21.html">Задание 21</a>
-            <a href="https://rustutors.ru/egeteoriya/1156-zadanie-22.html">Задание 22</a>
-            <a href="https://rustutors.ru/egeteoriya/1155-zadanie-23.html">Задание 23</a>
-            <a href="https://rustutors.ru/egeteoriya/1157-zadanie-24.html">Задание 24</a>
-        </div>
-        <div>
-            <a href="https://rustutors.ru/egeteoriya/1158-zadanie-25.html">Задание 25</a>
-            <a href="https://rustutors.ru/egeteoriya/1159-zadanie-26.html">Задание 26</a>
-            <a href="https://rustutors.ru/egeteoriya/1160-sochinenie.html">Задание 27(Сочинение)</a>
-        </div>
+
+<p>Марат гей</p>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Русский язык</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Математика</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Информатика</button>
+</div>
+
+<div id="London" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+    <h3>Справочный материал по русскому языку</h3>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1134-zadanie-1.html">Задание 1</a>
     </div>
-    <div class="item" id="math">
-        <div>
-            <p>Математика</p>
-        </div>
-        <div>
-            <div>Ахахахаха</div>
-            <div>Ахахахаха</div>
-            <div>Ахахахаха</div>
-        </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1136-zadanie-2.html">Задание 2</a>
     </div>
-    <div class="item" id="inf">
-        <div>
-            <p>Информатика</p>
-        </div>
-        <div>
-            <div>Ахахахаха</div>
-            <div>Ахахахаха</div>
-            <div>Ахахахаха</div>
-        </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1135-zadanie-3.html">Задание 3</a>
     </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1137-zadanie-4.html">Задание 4</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1138-zadanie-5.html">Задание 5</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1139-zadanie-6.html">Задание 6</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1140-zadanie-7.html">Задание 7</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1141-zadanie-8.html">Задание 8</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1142-zadanie-9.html">Задание 9</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1143-zadanie-10.html">Задание 10</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1144-zadanie-11.html">Задание 11</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1145-zadanie-12.html">Задание 12</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1146-zadanie-13.html">Задание 13</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1148-zadanie-14.html">Задание 14</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1147-zadanie-15.html">Задание 15</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1149-zadanie-16.html">Задание 16</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1150-zadanie-17.html">Задание 17</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1152-zadanie-18.html">Задание 18</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1151-zadanie-19.html">Задание 19</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1153-zadanie-20.html">Задание 20</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1154-zadanie-21.html">Задание 21
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1156-zadanie-22.html">Задание 22</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1155-zadanie-23.html">Задание 23</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1157-zadanie-24.html">Задание 24</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1158-zadanie-25.html">Задание 25</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1159-zadanie-26.html">Задание 26</a>
+    </div>
+    <div class="ssilka">
+        <a href="https://rustutors.ru/egeteoriya/1160-sochinenie.html">Сочинение</a>
+    </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+    <h3>Справочные материалы по математике</h3>
+    <p></p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">×</span>
+    <h3>Справочные материалы по информатике</h3>
+    <p></p>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
 </body>
-</html>
+</html> 
