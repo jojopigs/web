@@ -46,6 +46,8 @@ body {
 
 /* Style the tab */
 .tab {
+    display: block;
+    margin-top: 15px;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #20212B;
