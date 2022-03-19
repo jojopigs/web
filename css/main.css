@@ -37,7 +37,7 @@
 body {
     font-family: "Comfortaa" , sans-serif;
     background-color: #14151B;
-    color:#fff
+    color:#fff;
 }
 *{
     color:#fff;
@@ -72,50 +72,25 @@ a:hover {
 a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
-a:before {
-    color: rgba(var(--bright-color), var(--hundred)) !important;
-    position: absolute;
-    top: 0;
-    right: 10px !important;
-    margin-left: 240px;
-    background: linear-gradient(270deg, rgba(var(--dark-color), var(--hundred)), rgba(var(--dark-color), 0.3));
-    width: 8px;
-    margin: 10px 1px;
-    height: 8px;
-    border-radius: 50%;
-    font-size: 0;
-    transition: 0.2s ease, -webkit-0.2s ease, width 0s, margin 0s, padding 0s, font-size 0s, height 0s, top 0s, left 0s,line-height 0s, min-height 0s;
-}
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     border-radius: 8px;
     background-color: #8588CB;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
     border-radius: 8px;
     background-color: #8588CB;
 }
 
-/* Style the tab content */
 .tabcontent {
     border-radius: 8px;
     display: none;
     padding: 6px 12px;
-    border: 0px solid #ccc;
+    border: 0 solid #ccc;
     border-top: none;
 }
 
-/* Style the close button */
-.topright {
-    float: right;
-    cursor: pointer;
-    font-size: 28px;
-}
-
-.topright:hover {color: red;}
 
 .link{
     display:block;
@@ -127,7 +102,6 @@ a:before {
     height: 28px;
     margin: 10px 5px 0 5px;
     padding: 2px 2px 2px 15px;
-    display: flex;
     align-items: center;
 }
 
@@ -149,10 +123,23 @@ a:before {
         font-size: 14px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15px;
         margin-top: 15px;
+
+    }
+    #rus > h3,
+    #inf > h3,
+    #math > h3{
+        margin-bottom:  15px;
+
     }
     a{
         font-size: 15px;
     }
+    body {
+        font-family: "Comfortaa" , sans-serif;
+    }
+    *{
+        font-family: "Comfortaa" , sans-serif;
+    }
+
 }

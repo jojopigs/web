@@ -4,7 +4,6 @@
 <head>
     <title>Manual</title>
     <meta charset="utf-8">
-    <link href="media-queries.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,11 +13,11 @@
 </head>
 <body>
 <div class="tab">
-    <button class="tablinks" onclick="selectSubject(event, 'math')" id="defaultOpen">Математика</button>
-    <button class="tablinks" onclick="selectSubject(event, 'rus')">Русский язык</button>
-    <button class="tablinks" onclick="selectSubject(event, 'inf')">Информатика</button>
+    <button class="tab-links" onclick="selectSubject(Event, 'math')" id="defaultOpen">Математика</button>
+    <button class="tab-links" onclick="selectSubject(Event, 'rus')">Русский язык</button>
+    <button class="tab-links" onclick="selectSubject(Event, 'inf')">Информатика</button>
 </div>
-<div id="math" class="tabcontent">
+<div id="math" class="tab-content">
     <h3>Справочный материал по математике</h3>
     <div class="link"></div>
     <div class="link"></div>
@@ -26,7 +25,7 @@
     <div class="link"></div>
 </div>
 
-<div id="rus" class="tabcontent">
+<div id="rus" class="tab-content">
     <h3>Справочный материал по русскому языку</h3>
     <div class="link">
         <a href="https://rustutors.ru/egeteoriya/1134-zadanie-1.html">Задание 1</a>
@@ -111,7 +110,7 @@
     </div>
 </div>
 
-<div id="inf" class="tabcontent">
+<div id="inf" class="tab-content">
     <h3>Справочный материал по информатике</h3>
     <div class="link"></div>
     <div class="link"></div>
@@ -120,7 +119,7 @@
 
 </div>
 
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+
 <script src="js/index.js"></script>
 </body>
 </html>
