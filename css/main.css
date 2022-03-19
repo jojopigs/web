@@ -91,7 +91,7 @@ a {
         transition: 0.3s;
         font-size: 12px;
     }
-    .h3{
+    #rus > h3{
         display: table;
         font-size: 13px;
         margin: auto;
