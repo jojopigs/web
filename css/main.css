@@ -1,5 +1,73 @@
-.item {
-    display:inline;
-    padding-right: 50px;
-    float:left
+body {
+    font-family: Comfortaa;
+    background-color: #14151B;
+    color:#fff
+}
+*{
+    color:#fff;
+    font-family: Comfortaa
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #20212B;
+    background-color: #20212B;
+
+}
+
+/* Style the buttons inside the tab */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #C30B15;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #C30B15;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px solid #ccc;
+    border-top: none;
+}
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+.link{
+    display:block;
+    text-decoration:none;
+    font-family: Comfortaa !important;
+    border-radius: 20px !important;
+    font-size: 100% !important;
+    color: #f8f8f8 !important;
+    font-weight: bold !important;
+    background: #20212B !important;
+    height: 28px !important;
+    margin: 10px 5px 0 5px !important;
+    padding: 2px 2px 2px 15px !important;
+    display: flex !important;
+    align-items: center !important;
 }
