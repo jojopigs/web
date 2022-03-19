@@ -7,6 +7,7 @@ body {
     color:#fff;
     font-family: "Arial" , sans-serif;
 }
+
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -70,4 +71,20 @@ a {
     padding: 2px 2px 2px 15px !important;
     display: flex !important;
     align-items: center !important;
+}
+
+@media screen and (min-width: 600px) {
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 16px 13px;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .h3{
+        font-size: 16px;
+    }
 }
