@@ -14,11 +14,22 @@
 </head>
 <body>
 <div class="tab">
+
     <button class="tablinks" onclick="selectSubject(event, 'math')" id="defaultOpen">Математика</button>
     <button class="tablinks" onclick="selectSubject(event, 'rus')">Русский язык</button>
     <button class="tablinks" onclick="selectSubject(event, 'inf')">Информатика</button>
 </div>
 <div id="math" class="tabcontent">
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Штучка с выпадающим меню</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
     <h3>Справочный материал по математике</h3>
     <div class="link"></div>
     <div class="link"></div>
