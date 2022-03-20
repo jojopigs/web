@@ -1,10 +1,10 @@
 function selectSubject(evt, subjectName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tab-links");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -16,21 +16,12 @@ function selectSubject(evt, subjectName) {
 document.getElementById("defaultOpen").click();
 
 
-
-
-
-
-
-
-
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-
 window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.drop-button')) {
 
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
