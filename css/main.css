@@ -1,39 +1,3 @@
-@font-face {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Comfortaa Regular"), local("Comfortaa-Regular"), url(https://fonts.gstatic.com/s/comfortaa/v10/-DackuIFgo7Hfy3rR14C3xJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Comfortaa Regular"), local("Comfortaa-Regular"), url(https://fonts.gstatic.com/s/comfortaa/v10/qLBu5CQmSMt1H43OiWJ77VtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 700;
-    src: local("Comfortaa Bold"), local("Comfortaa-Bold"), url(https://fonts.gstatic.com/s/comfortaa/v10/fND5XPYKrF2tQDwwfWZJI5X5f-9o1vgP2EXwfjgl7AY.woff2) format("woff2");
-    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-    font-family: 'Comfortaa';
-    font-style: normal;
-    font-weight: 700;
-    src: local("Comfortaa Bold"), local("Comfortaa-Bold"), url(https://fonts.gstatic.com/s/comfortaa/v10/fND5XPYKrF2tQDwwfWZJI-gdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-:root {
-    --font-family: "Comfortaa", sans-serif !important;
-    --font-main: "Comfortaa", sans-serif !important;
-    --font-alt: var(--font-family);
-    --font-alt-text-letter-spacing: normal;
-}
-
-
 body {
     font-family: "Comfortaa" , sans-serif;
     background-color: #14151B;
@@ -46,8 +10,6 @@ body {
 
 /* Style the tab */
 .tab {
-    display: block;
-    margin-top: 15px;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #20212B;
@@ -77,6 +39,7 @@ a:before {
     position: absolute;
     top: 0;
     right: 10px !important;
+    margin-left: 240px;
     background: linear-gradient(270deg, rgba(var(--dark-color), var(--hundred)), rgba(var(--dark-color), 0.3));
     width: 8px;
     margin: 10px 1px;
@@ -92,29 +55,29 @@ a:before {
     background-color: #8588CB;
 }
 
-/* Create an active/current tab-link class */
+/* Create an active/current tablink class */
 .tab button.active {
     border-radius: 8px;
     background-color: #8588CB;
 }
 
 /* Style the tab content */
-.tab-content {
+.tabcontent {
     border-radius: 8px;
     display: none;
     padding: 6px 12px;
-    border: 0 solid #ccc;
+    border: 0px solid #ccc;
     border-top: none;
 }
 
 /* Style the close button */
-.top-right {
+.topright {
     float: right;
     cursor: pointer;
     font-size: 28px;
 }
 
-.top-right:hover {color: red;}
+.topright:hover {color: red;}
 
 .link{
     display:block;
@@ -126,6 +89,7 @@ a:before {
     height: 28px;
     margin: 10px 5px 0 5px;
     padding: 2px 2px 2px 15px;
+    display: flex;
     align-items: center;
 }
 
@@ -145,158 +109,12 @@ a:before {
     #math > h3{
         display: table;
         font-size: 14px;
-        margin: 15px auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
     a{
         font-size: 15px;
     }
-}
-
-/*ТЕСТОВАЯ ПАРАША, НЕ ТРОГАТЬ*/
-
-.btn-default {
-    background-color: #20212B;
-    border-color: #20212B;
-    min-width: 160px;
-    text-align: left;
-}
-
-.btn-default:focus {
-    background-color: #20212B;
-    border-color: #20212B;
-}
-
-.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-    color: #8588cb;
-    background-color: #20212B;
-    border-color: #20212B;
-    border-radius:4px 4px 0 0;
-
-}
-
-
-.btn.btn-default.dropdown-toggle{
-    background:#20212B;
-    border-color: #20212B;
-    color:#f8f8f8;
-
-}
-
-
-
-.btn.btn-default.caret{
-    background:#20212B;
-    border-color: #20212B;
-    color:#f8f8f8;
-    transition-duration: .9s;
-    transform: rotate(0deg);
-
-}
-.caret{
-    margin-top:8px;
-    margin-right: 15px;
-    float: right;
-    transform: rotate(90deg);
-}
-
-.caret:focus, .caret:hover, .caret:active.focus, .caret:active:focus, .caret:active:hover, .open>.caret:focus, .open>.caret:active, .open>.caret:hover{
-    transform: rotate(0deg);
-    transition-duration: .2s;
-}
-
-.btn .caret:focus, .btn .caret:hover, .btn .caret:active.focus, .btn .caret:active:focus, .btn .caret:active:hover, .open>.btn .caret:focus, .open>.btn .caret:active, .open>.btn .caret:hover{
-    transform: rotate(0deg);
-    transition-duration: .2s;
-}
-
-
-
-
-.dropdown-menu {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 0px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #20212B;
-    background-clip: padding-box;
-    border: 0px solid #ccc;
-    border: 0px solid rgba(0,0,0,.15);
-    border-radius: 0px 0px 4px 4px ;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: none ;
-}
-
-
-.dropdown-menu>li>a {
-    display: block;
-    padding: 3px 20px;
-    clear: both;
-    font-weight: 400;
-    line-height: 1.42857143;
-    color: #f8f8f8;
-    white-space: nowrap;
-}
-
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #8588cb;
-    text-decoration: none;
-    background-color: #14151B;
-}
-
-
-.dropdown-menu .divider {
-    height: 1px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #555;
-}
-
-
-.dropdown-header {
-    display: block;
-    padding: 3px 20px;
-    font-size: 16px;
-    line-height: 1.42857143;
-    color: #8c8c8c;
-    white-space: nowrap;
-}
-
-
-
-
-.btn-default {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    font-size: 100%;
-    color: #f8f8f8;
-    background: #20212B;
-    height: 28px;
-    margin: 10px 5px 0 5px;
-    padding: 2px 2px 2px 15px;
-}
-
-.dropdown-menu {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0px 5px 0 5px;
-    padding: 2px 2px 2px 15px;
-}
-
-.btn.btn-default.dropdown-toggle{
-    width: 100%;
-    height: 100%;
-    margin: 0px 5px 0 5px;
-    padding: 2px 2px 2px 15px;
-
 }
